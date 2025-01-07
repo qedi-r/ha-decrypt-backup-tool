@@ -1,6 +1,6 @@
 # Home Assistant Backup Decryption Tool
 
-This tool helps you decrypt Home Assistant backups outside of Home Assistant, using your emergency kit.
+This tool allows you to decrypt Home Assistant backups outside of Home Assistant, using your emergency kit or a known password.
 
 ## Prerequisites
 
