@@ -20,7 +20,7 @@ This tool helps you decrypt Home Assistant backups outside of Home Assistant, us
 1. Create a new directory for decryption
 2. Place these files in the directory:
    - The script (`decrypt_backup.py`)
-   - Your backup .tar file(s)
+   - Your backup .tar file
    - Your emergency kit text file (optional)
 3. Run the script:
    ```bash
