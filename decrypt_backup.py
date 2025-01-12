@@ -135,10 +135,6 @@ def main():
     
     # Look for emergency kit file
     kit_files = glob.glob('*emergency*kit*.txt')
-    if not kit_files:
-        print("❌ Error: No emergency kit file found!")
-        print("Please place your emergency kit text file in this directory.")
-        sys.exit(1)
     
     # Try to extract key from the kit file first
     key = None
@@ -169,7 +165,7 @@ def main():
     if not tar_files:
         print("❌ Error: No .tar files found!")
         print("Please place your backup .tar files in this directory.")
-        sys.exit(3)
+        sys.exit(1)
     
     print(f"📁 Found {len(tar_files)} backup file(s) to process")
     
