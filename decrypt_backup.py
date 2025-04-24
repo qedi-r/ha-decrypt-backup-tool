@@ -80,7 +80,7 @@ class SecureTarFile:
 
     def __enter__(self):
         self._file = self._name.open("rb")
-        cbc_rand = self._file.read(16)
+        cbc_rand = self.read_rand_from_header(self._file)
         self._aes = Cipher(
             algorithms.AES(self._key),
             modes.CBC(generate_iv(self._key, cbc_rand)),
